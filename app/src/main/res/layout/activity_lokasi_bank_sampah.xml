@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LokasiBankSampah"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#00BFFF"
+                android:padding="5dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/gambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_pss" />
+
+                <TextView
+                    android:id="@+id/nama_bank_sampah_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peduli Sungai Surabaya (PSS)"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/alamat_bank_samapah_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6D6060"
+                    android:text="Area Intiland Tower, jl. Jen. Basuki Rachmat Belakang No.194, Keputran, Kec. Tegalsari, Surabaya, Jawa Timur 60265"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fasilitas"
+                    android:textStyle="bold"/>
+
+
+                <LinearLayout
+                    android:id="@+id/fasilitas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/jarak_antar_fasilitas"
+                    android:orientation="horizontal"
+                    android:showDividers="middle"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:text="Free Pick Up"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_corner"
+                        android:padding="5dp"
+                        android:text="100% Terpercaya" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/black"
+                        android:layout_gravity="left"
+                        android:background="@drawable/rounded_corner"
+                        android:padding="5dp"
+                        android:text="Proses Cepat" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:divider="@drawable/jarak_antar_fasilitas"
+                    android:showDividers="middle"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    >
+                    <Button
+                        android:id="@+id/bukaWa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#27FF22"
+                        android:textColor="#5B6870"
+                        android:padding="5dp"
+                        android:text="Hubungi Whatsapp"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
